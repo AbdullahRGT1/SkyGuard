@@ -1,0 +1,11 @@
+# Optional AI layer dependencies for machines without an NVIDIA GPU.
+# Install after running setup_project.ps1:
+#   .\setup_ai_cpu.ps1
+
+# PyTorch CPU packages are installed explicitly by setup_ai_cpu.ps1 from:
+#   https://download.pytorch.org/whl/cpu
+#
+# InsightFace uses ONNX Runtime for face detection and embeddings.
+onnxruntime>=1.18
+
+# The remaining shared AI packages live in requirements-ai-common.txt.

@@ -1,0 +1,23 @@
+from enum import StrEnum
+
+
+class StreamerState(StrEnum):
+    BOOTING = "BOOTING"
+    READY_WAITING = "READY_WAITING"
+    AUTH_CHECK = "AUTH_CHECK"
+    STARTING = "STARTING"
+    STREAMING = "STREAMING"
+    STOPPING = "STOPPING"
+    ERROR = "ERROR"
+
+
+class ConnectionState(StrEnum):
+    DISCONNECTED = "DISCONNECTED"
+    CONNECTING = "CONNECTING"
+    AUTHENTICATED = "AUTHENTICATED"
+    ERROR = "ERROR"
+
+
+START_ALLOWED_FROM = {StreamerState.READY_WAITING}
+STOP_ALLOWED_FROM = {StreamerState.STARTING, StreamerState.STREAMING}
+

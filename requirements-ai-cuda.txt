@@ -1,0 +1,12 @@
+# Optional AI layer dependencies for NVIDIA GPU/CUDA machines.
+# Install after running setup_project.ps1:
+#   .\setup_ai_cuda.ps1
+#
+# PyTorch CUDA packages are installed explicitly by setup_ai_cuda.ps1 from:
+#   https://download.pytorch.org/whl/cu128
+#
+# InsightFace uses ONNX Runtime for face detection and embeddings.
+# The GPU package is preferred here so Smart Alerts can use CUDA when available.
+onnxruntime-gpu>=1.18
+
+# The remaining shared AI packages live in requirements-ai-common.txt.

@@ -1,0 +1,8 @@
+# Optional AI packages shared by CPU and CUDA AI setups.
+
+ultralytics>=8.3
+cvzone>=1.6.1
+pillow>=10
+PyYAML>=6
+lap>=0.5
+insightface>=0.7.3
