@@ -19,9 +19,6 @@ logs/
 .coverage
 htmlcov/
 Images/
-AI_layer/yolo/*.pt
-*.onnx
-*.engine
 *.sqlite3
 *.db
 *.sqlite
@@ -38,10 +35,6 @@ backup/
 *.mkv
 *.wav
 *.mp3
-*.pt
-*.pth
-*.safetensors
-*.bin
 .env
 .env.*
 !.env.example
