@@ -9,7 +9,7 @@ The streamer app always starts in `READY_WAITING`. It does not open the camera, 
 Automatic setup on Windows:
 
 ```powershell
-cd path\to\simple-stream
+cd path\to\skyguard
 .\setup_project.ps1
 ```
 
@@ -22,7 +22,7 @@ Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 Manual setup:
 
 ```powershell
-cd path\to\simple-stream
+cd path\to\skyguard
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
@@ -61,14 +61,14 @@ If an older `%APPDATA%\SIMPLE_STREAM\operator_settings.json` file exists, SkyGua
 For machines without an NVIDIA GPU, install the CPU AI environment:
 
 ```powershell
-cd path\to\simple-stream
+cd path\to\skyguard
 .\setup_ai_cpu.ps1
 ```
 
 For machines with an NVIDIA GPU/CUDA, install the CUDA AI environment:
 
 ```powershell
-cd path\to\simple-stream
+cd path\to\skyguard
 .\setup_ai_cuda.ps1
 ```
 
