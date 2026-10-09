@@ -1,5 +1,5 @@
 ﻿# SkyGuard
-
+ 
 Modern operator/streamer desktop system for low-latency LAN video control.
 
 The streamer app always starts in `READY_WAITING`. It does not open the camera, encode frames, or transmit video until an authenticated operator sends `START_STREAM`.
